@@ -16,19 +16,22 @@
 */
 
 type User = {
-    name: string,
-    email: string
-}
+    name: string;
+    email: string;
+};
 // without Partial type
 type User2 = {
-    name?: string,
-    email?: string
-}
+    name?: string;
+    email?: string;
+};
 // with Partial type
-type User3 = Partial<User>
+type User3 = Partial<User>;
 
 // required => opposite of partial type
-type User4 = Required<User2>
+type User4 = Required<User2>;
 
-// readonly 
-type User5 = Readonly<User>
+// readonly
+type User5 = Readonly<User>;
+
+// record (Keys, Type)
+type User6 = Record<"name" | "email" | "gender", string>;
