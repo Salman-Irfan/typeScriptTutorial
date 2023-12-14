@@ -10,7 +10,12 @@ class Product {
     get getId() {
         return this._id;
     }
+    set setName(value) {
+        this.name = value;
+    }
 }
 const firstProduct = new Product("macbook", 50000, 35);
 console.log(firstProduct.price);
 console.log(firstProduct.getId);
+firstProduct.setName = "macbook changed";
+console.log(firstProduct.name);

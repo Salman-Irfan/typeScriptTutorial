@@ -3,7 +3,7 @@ interface ProductType {
     price: number;
     stock: number;
     offer?: boolean;
-    getId:  string;
+    getId: string;
 }
 
 class Product implements ProductType {
@@ -19,8 +19,14 @@ class Product implements ProductType {
     get getId(): string {
         return this._id;
     }
+
+    set setName(value: string) {
+        this.name = value;
+    }
 }
 
 const firstProduct = new Product("macbook", 50000, 35);
 console.log(firstProduct.price);
 console.log(firstProduct.getId);
+firstProduct.setName = "macbook changed";
+console.log(firstProduct.name);
