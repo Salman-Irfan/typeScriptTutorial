@@ -26,3 +26,6 @@ type User2 = {
 }
 // with Partial type
 type User3 = Partial<User>
+
+// required => opposite of partial type
+type User4 = Required<User2>
