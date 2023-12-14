@@ -29,3 +29,6 @@ type User3 = Partial<User>
 
 // required => opposite of partial type
 type User4 = Required<User2>
+
+// readonly 
+type User5 = Readonly<User>
