@@ -8,4 +8,16 @@ console.log(btn);
 btn.onclick;
 const myImg = document.getElementById('my-img');
 console.log(myImg);
-// myImg.src
+const customerOne = {
+    name: 'salman',
+    email: 'salman@gmail.com',
+};
+const getName = () => {
+    return customerOne['name'];
+};
+const getEmail = () => {
+    return customerOne['email'];
+};
+const getCustomerData = (key) => {
+    return customerOne[key];
+};
